@@ -40,7 +40,7 @@
     computed: {
       ...mapGetters('trainings', ['trainingById']),
       training() {
-        return this.trainingById(1)
+        return this.trainingById(this.id)
       },
       trainingName: {
         set(value) {

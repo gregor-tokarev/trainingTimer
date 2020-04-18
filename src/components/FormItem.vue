@@ -1,8 +1,8 @@
 <template>
   <div class="form-item">
-    <input type="text" class="value-input" @keyup="updateExerciseName($event)" :value="exercise.name">
-    <input @change="updateExerciseDuration($event)" :value="exercise.duration" type="number">
-    <input @change="updateExerciseOffset($event)" :value="exercise.offset" type="number">
+    Name: <input type="text" class="value-input" @keyup="updateExerciseName($event)" :value="exercise.name">
+    Duration: <v-text-field @change="updateExerciseDuration($event)" :value="exercise.duration" type="number"/>
+    Offset: <input @change="updateExerciseOffset($event)" :value="exercise.offset" type="number">
   </div>
 </template>
 
