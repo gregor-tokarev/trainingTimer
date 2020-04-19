@@ -35,7 +35,8 @@
     },
     methods: {
       addTraining() {
-        const id = this.$store.state.trainings.trainings.length + 1;
+        const id = Object.keys(this.$store.getters['trainings/trainings']).length;
+        this.$store.dispatch('trainings/addTraining', id);
         this.$router.push({name: 'edit', params: {id}});
       }
     }

@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Main from '@/views/Main';
 import Training from "@/views/Training";
 import Start from "@/views/Edit";
+import Go from "@/views/Go";
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,12 @@ const routes = [
     name: 'edit',
     props: true,
     component: Start
+  },
+  {
+    path: '/go/:id',
+    name: 'go',
+    props: true,
+    component: Go
   }
 ];
 

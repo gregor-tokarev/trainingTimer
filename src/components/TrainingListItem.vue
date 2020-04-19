@@ -1,9 +1,14 @@
 <template>
   <v-list-item color="error" three-line two-line>
     <v-list-item-title class="title">{{training.name}} </v-list-item-title>
-    <span class="mr-6 time">Totoal time: {{ totalTime }}c</span>
-    <v-btn @click="edit" color="success" class="mr-3"><v-icon>mdi-pencil</v-icon></v-btn>
-    <v-btn @click="go" color="primary"> <v-icon>mdi-play</v-icon></v-btn>
+    <v-btn @click="edit" color="success"><v-icon>mdi-pencil</v-icon></v-btn>
+    <v-btn @click="go" color="primary" class="mx-3"> <v-icon>mdi-play</v-icon></v-btn>
+    <v-btn
+          color="error"
+          @click="deleteTraining"
+    >
+      <v-icon>mdi-delete</v-icon>
+    </v-btn>
   </v-list-item>
 </template>
 
@@ -16,20 +21,16 @@
         required: true
       }
     },
-    computed: {
-      totalTime() {
-        return  this.training.exercises.reduce((acc, item) => {
-          acc += item.duration + item.offset;
-          return acc;
-        }, 0)
-      }
-    },
     methods: {
       go() {
-        this.$router.push({name: 'training', params: { id: this.training.id }})
+        this.$router.push({name: 'training', params: { id: this.training.id }});
       },
       edit() {
         this.$router.push({name: 'edit', params: { id: this.training.id }})
+      },
+      deleteTraining() {
+        console.log(this.training.id)
+        this.$store.dispatch('trainings/deleteTraining', this.training.id)
       }
     }
   }
