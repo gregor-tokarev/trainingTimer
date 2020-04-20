@@ -43,6 +43,7 @@
     },
     mounted() {
       this.startValue = this.exercise.duration;
+      this.value = this.startValue;
     },
     methods: {
       setInter() {
@@ -53,7 +54,6 @@
           this.interval = undefined;
           return
         }
-        this.value = this.startValue;
         audio.pause();
         this.interval = setInterval(() => {
           if (this.value === 0) {
