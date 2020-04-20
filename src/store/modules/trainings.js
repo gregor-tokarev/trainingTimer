@@ -5,21 +5,21 @@ const trainings = {
   namespaced: true,
   state: {
     trainings: {
-      /*1: {
+/*      1: {
         name: 'Fat Lose',
         id: 1,
         exercises: {
           1: {
             id: 1,
             name: 'Jampen Jack',
-            duration: 30,
-            offset: 15
+            duration: 10,
+            offset: 5
           },
           2: {
             id: 2,
             name: 'Push Up',
-            duration: 30,
-            offset: 0
+            duration: 8,
+            offset: 5
           }
         }
       }*/

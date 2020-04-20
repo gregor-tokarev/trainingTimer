@@ -29,7 +29,6 @@
         this.$router.push({name: 'edit', params: { id: this.training.id }})
       },
       deleteTraining() {
-        console.log(this.training.id)
         this.$store.dispatch('trainings/deleteTraining', this.training.id)
       }
     }
