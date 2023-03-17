@@ -1,24 +1,31 @@
-# sport-timer
+<h1 align="center">Welcome to sport-timer 👋</h1>
+<p>
+  <img src="https://img.shields.io/badge/node-~12.22-blue.svg" />
+  <img src="https://img.shields.io/badge/npm-%5E6-blue.svg" />
+</p>
 
-## Project setup
-```
+> This is the sport timer written in vue.js ^2. I create it for educational perpeses.
+
+## Prerequisites
+
+- node ~12.22
+- npm ^6
+
+## Install
+
+```sh
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
+## Usage
+
+```sh
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Author
 
-### Run your unit tests
-```
-npm run test:unit
-```
+👤 **Egor Tokarev**
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* Website: https://tokarev.work
+* Github: [@gregor-tokarev](https://github.com/gregor-tokarev)

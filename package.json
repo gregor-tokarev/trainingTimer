@@ -7,6 +7,10 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit"
   },
+  "engines": {
+    "node": "~12.22",
+    "npm": "^6"
+  },
   "dependencies": {
     "@mdi/font": "^5.1.45",
     "core-js": "^3.6.4",
